@@ -1,35 +1,10 @@
 // 个人工作台 Host 半片：把 MNEMON 记忆、DSH 会话聚合成一个 /workbench/stats 接口。
 // 读本机文件在这个进程里完成，浏览器只拿结果，不接触路径。
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
-import { dirname, join } from 'node:path'
-import { collectStats, dshHome } from './lib/stats.js'
+import { collectStats } from './lib/stats.js'
 
 export const name = 'dsh-workbench'
 
 export const inject = ['webServer', 'connection']
-
-/** 缓存放 DSH_HOME 下，跟插件状态同域。 */
-function cachePath() {
-  return join(dshHome(), 'workbench', 'cache.json')
-}
-
-async function loadCache() {
-  try {
-    return JSON.parse(await readFile(cachePath(), 'utf8'))
-  } catch {
-    return {}
-  }
-}
-
-async function saveCache(cache) {
-  try {
-    const p = cachePath()
-    await mkdir(dirname(p), { recursive: true })
-    await writeFile(p, JSON.stringify(cache), 'utf8')
-  } catch {
-    /* 缓存写不了不影响读数 */
-  }
-}
 
 function json(res, status, body) {
   res.statusCode = status
@@ -63,9 +38,10 @@ export function apply(ctx) {
               json(res, 404, { error: 'not found' })
               return
             }
-            const cache = await loadCache()
+            // 这里原本把读到的旧缓存原样写回，缓存机制完全空转。
+            // 本插件的 collectStats 只读本机文件（毫秒级），不需要缓存；
+            // 真正的网络请求在客户端 fetch，由前端控制刷新节奏。
             const stats = await collectStats()
-            await saveCache(cache)
             json(res, 200, stats)
           } catch (err) {
             json(res, 200, { at: Date.now(), error: err.message })

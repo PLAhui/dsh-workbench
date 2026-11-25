@@ -1,6 +1,6 @@
 {
   "name": "@plahui/dsh-workbench",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "type": "module",
   "description": "个人工作台：今日三件、暂存区、任务池、周计划复盘，知识数据直接读 MNEMON 与本机会话",
   "license": "MIT",
