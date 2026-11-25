@@ -2,7 +2,7 @@
 
 DeepSeek Harness 插件。每天只锁三件事，想到的东西先丢暂存区，周末对着计划收一次口。
 
-![个人工作台](docs/screenshot.png)
+![个人工作台](https://github.com/PLAhui/dsh-workbench/raw/master/docs/screenshot.png)
 
 ## 它解决什么
 
