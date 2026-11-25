@@ -19,7 +19,7 @@ DeepSeek Harness 插件。每天只锁三件事，想到的东西先丢暂存区
 1. 打开 DeepSeek Harness，左栏进入 **Plugins**。
 2. 点 **Add plugin**，填入 Release 里的 tarball 地址，例如：
    ```
-   https://github.com/PLAhui/dsh-workbench/releases/download/v1.0.0/plahui-dsh-workbench-1.0.0.tgz
+   https://github.com/PLAhui/dsh-workbench/releases/download/v1.1.0/plahui-dsh-workbench-1.1.0.tgz
    ```
 3. 安装完成后重启 DeepSeek Harness。
 
@@ -33,9 +33,22 @@ DeepSeek Harness 插件。每天只锁三件事，想到的东西先丢暂存区
 |---|---|
 | 今日 | 长期目标 + 今天三件 + 数据沉底 |
 | 暂存区 | 零摩擦缓冲池，输入时不分类 |
-| 任务池 | 列表 / 看板 / 日历，同一份数据三种看法 |
+| 任务池 | 列表 / 看板 / 日历，同一份数据三种看法；每条可排期、可进今日、可进本周 |
 | 周计划 · 复盘 | 周初定三件，周末对照收口 |
 | 数据源 | MNEMON 与本机会话的只读快照 |
+
+## 一条任务怎么流动
+
+```
+暂存区速记 → 标象限 → 「→任务」进任务池
+                              ↓
+            任务池里三选一（这是关键的一步）
+            ├─ 选日期  → 上日历，按天看到
+            ├─ 进今日  → 进今日三件，今天就做
+            └─ 进本周  → 进周计划，这周要推进
+```
+
+任务池不是仓库，是**分流站**。搁置只是「先不做」，不是「不用做」——所以每条任务都带着这三个出口。
 
 ## 数据存在哪
 
