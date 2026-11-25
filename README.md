@@ -19,7 +19,7 @@ DeepSeek Harness 插件。每天只锁三件事，想到的东西先丢暂存区
 1. 打开 DeepSeek Harness，左栏进入 **Plugins**。
 2. 点 **Add plugin**，填入 Release 里的 tarball 地址，例如：
    ```
-   https://github.com/PLAhui/dsh-workbench/releases/download/v1.2.1/plahui-dsh-workbench-1.2.1.tgz
+   https://github.com/PLAhui/dsh-workbench/releases/download/v1.2.2/plahui-dsh-workbench-1.2.2.tgz
    ```
 3. 安装完成后重启 DeepSeek Harness。
 

@@ -540,7 +540,7 @@ function renderToday() {
   const st = weekStats();
   $("#weekPct").innerHTML = st.planned ? st.pct + "%<small>计划完成</small>" : '—<small>还没计划</small>';
   $("#weekPctNote").textContent = st.planned
-    ? `${st.done}/${st.planned} 完成 · 顺延 ${st.carry} 件`
+    ? `${st.done}/${st.planned} 完成${st.extra ? " · 计划外 " + st.extra + " 件" : ""} · 顺延 ${st.carry} 件`
     : "去「周计划」定三件，这里才有进度";
 
   // 本周节奏：本周有截止日的任务
