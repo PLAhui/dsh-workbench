@@ -32,7 +32,7 @@
   "files": [
     "index.js",
     "client.js",
-    "lib/cordis.patch.yml",
+    "cordis.patch.yml",
     "lib/stats.js",
     "locale/*.json",
     "docs/DETAIL.md",
