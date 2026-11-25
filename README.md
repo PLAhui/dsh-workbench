@@ -37,6 +37,14 @@ DeepSeek Harness 插件。每天只锁三件事，想到的东西先丢暂存区
 | 周计划 · 复盘 | 周初定三件，周末对照收口 |
 | 数据源 | MNEMON 与本机会话的只读快照 |
 
+任务池列表——每条任务带日期框和两个出口：
+
+![任务池](https://github.com/PLAhui/dsh-workbench/raw/master/docs/shot-tasks.png)
+
+日历可翻周，排到下个月也看得到：
+
+![日历](https://github.com/PLAhui/dsh-workbench/raw/master/docs/shot-cal.png)
+
 ## 一条任务怎么流动
 
 ```

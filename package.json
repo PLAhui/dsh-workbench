@@ -32,12 +32,13 @@
   "files": [
     "index.js",
     "client.js",
-    "lib",
-    "cordis.patch.yml",
+    "lib/cordis.patch.yml",
+    "lib/stats.js",
     "locale/*.json",
     "docs/DETAIL.md",
-    "docs/screenshot.png",
-    "icon.svg"
+    "icon.svg",
+    "README.md",
+    "LICENSE"
   ],
   "dsh": {
     "manifestVersion": 1,
