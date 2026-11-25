@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Personal workbench",
+    "description": "Three daily commitments, a quick-capture inbox, a task pool, and weekly plan/review. Knowledge figures are read from MNEMON and local sessions without an external service.",
+    "detail": "docs/DETAIL.md"
+  }
+}

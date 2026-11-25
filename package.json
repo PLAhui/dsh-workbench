@@ -1,0 +1,55 @@
+{
+  "name": "@plahui/dsh-workbench",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "个人工作台：今日三件、暂存区、任务池、周计划复盘，知识数据直接读 MNEMON 与本机会话",
+  "license": "MIT",
+  "author": "PLahui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PLAhui/dsh-workbench.git"
+  },
+  "homepage": "https://github.com/PLAhui/dsh-workbench",
+  "bugs": {
+    "url": "https://github.com/PLAhui/dsh-workbench/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "workbench",
+    "todo",
+    "weekly-review"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.5"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs/DETAIL.md",
+    "docs/screenshot.png",
+    "icon.svg"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

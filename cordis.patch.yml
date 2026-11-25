@@ -1,0 +1,3 @@
+- insert:
+    - id: '@plahui/dsh-workbench:workbench'
+      name: '@plahui/dsh-workbench'
