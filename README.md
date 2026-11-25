@@ -19,7 +19,7 @@ DeepSeek Harness 插件。每天只锁三件事，想到的东西先丢暂存区
 1. 打开 DeepSeek Harness，左栏进入 **Plugins**。
 2. 点 **Add plugin**，填入 Release 里的 tarball 地址，例如：
    ```
-   https://github.com/PLAhui/dsh-workbench/releases/download/v1.1.0/plahui-dsh-workbench-1.1.0.tgz
+   https://github.com/PLAhui/dsh-workbench/releases/download/v1.1.1/plahui-dsh-workbench-1.1.1.tgz
    ```
 3. 安装完成后重启 DeepSeek Harness。
 
@@ -57,6 +57,10 @@ DeepSeek Harness 插件。每天只锁三件事，想到的东西先丢暂存区
 ```
 
 任务池不是仓库，是**分流站**。搁置只是「先不做」，不是「不用做」——所以每条任务都带着这三个出口。
+
+**状态是互通的**：任务进了今日三件或周计划后，在任务池里把它勾完成，那两处会跟着变成已完成；反过来在今日三件里勾掉，任务池那条也会跟着变。带「任务池」小标记的条目就是这种联动条目。
+
+**标签是你自己的分类法**：任务池里每条任务的标签是个下拉框，随时能改、也能选「无标签」清掉。系统不会替你打标签。
 
 ## 数据存在哪
 
